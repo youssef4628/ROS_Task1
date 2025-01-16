@@ -1,0 +1,5 @@
+<launch>
+  <node name="data" pkg="range_sensors_validator" type="rec_data.py" output="screen"/>
+  <node name="validator_node" pkg="range_sensors_validator" type="validator.py" output="screen"/>
+  <node name="z_manager_node" pkg="range_sensors_validator" type="management.py" output="screen"/>
+</launch>
